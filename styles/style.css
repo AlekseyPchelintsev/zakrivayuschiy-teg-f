@@ -14,9 +14,6 @@
 
 */
 
-:root {
-}
-
 .page {
   display: flex;
   flex-direction: column;
@@ -29,7 +26,7 @@
   background-size: cover;
   background-attachment: fixed;
   font-family: var(--main-font);
-  padding: 102px 0;
+  padding: 102px 0 60px;
 }
 
 @supports (font-variation-settings: normal) {
@@ -419,7 +416,7 @@
   background-color: var(--bg-color);
   padding: 30px;
   outline: 2px solid var(--border-color);
-  min-inline-size: 353px;
+  min-inline-size: 385px;
 }
 
 .insert-disk::backdrop {
@@ -453,7 +450,7 @@
 .dialog-button {
   position: relative;
   overflow: hidden;
-  padding: 12.5px;
+  padding: 10.5px 0 6px;
 }
 
 @media (width <= 375px) {
@@ -494,7 +491,7 @@
   }
 
   .insert-disk {
-    max-inline-size: 346px;
+    min-inline-size: 346px;
   }
 
   .dialog-text {
