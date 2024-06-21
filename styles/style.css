@@ -39,10 +39,11 @@
   margin-block-end: 104px;
   padding-block-start: 136px;
   outline: 2px solid var(--border-color);
+  outline-offset: -2px;
   font-family: var(--accent-font);
   background-color: var(--bg-color);
   max-inline-size: 696px;
-  inline-size: 99vi;
+  inline-size: 100%;
   min-block-size: 327px;
   block-size: 100%;
 }
@@ -89,15 +90,9 @@
 
 /* Анимация стрелки активного пункта меню выбора темы */
 
-/* Добавил отрицательный отступ и две позиции по 50% для theme-menu__button т.к. 
-при проверке в safari стрелка ведёт себя не корректно без них. 
-В Мозиле и Яндксе при этом и без этих костылей отображается корректно. */
 .theme-menu__button:disabled:before {
   content: '▶';
   position: absolute;
-  left: 50%;
-  right: 50%;
-  margin-inline-start: -60px;
   animation: move 1s infinite ease-in-out;
 }
 
@@ -170,9 +165,10 @@
   display: flex;
   flex-direction: column;
   outline: 2px solid var(--border-color);
+  outline-offset: -2px;
   background-color: var(--bg-color);
   max-inline-size: 698px;
-  inline-size: 99vi;
+  inline-size: 100%;
 }
 
 .item__title {
@@ -193,12 +189,14 @@
 }
 
 .item__image-wrapper {
-  max-block-size: 698px;
+  max-block-size: 692px;
   text-shadow:
     -1px 0 var(--text-stroke-color),
     0 1px var(--text-stroke-color),
     1px 0 var(--text-stroke-color),
     0 -1px var(--text-stroke-color);
+  border-inline-start: 2px solid var(--accent-color);
+  border-inline-end: 2px solid var(--accent-color);
 }
 
 @supports (-webkit-text-stroke: 0.5px var(--text-stroke-color)) {
@@ -213,6 +211,10 @@
 }
 
 /* Фильтры для изображений */
+
+.in-car {
+  filter: brightness(1.5);
+}
 
 .with-cat {
   filter: contrast(1.3);
