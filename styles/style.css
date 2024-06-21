@@ -27,12 +27,7 @@
   background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-}
-
-@supports (font-variation-settings: normal) {
-  .page {
-    font-weight: 'wght' var(--font-weight-normal, 400);
-  }
+  font-variation-settings: 'wght' var(--font-weight-normal, 400);
 }
 
 .header {
@@ -87,7 +82,6 @@
 }
 
 .theme-menu__button {
-  /*padding-inline-start: 18px;*/
   font-size: var(--text-font-size-small);
   text-transform: uppercase;
   transition: var(--transition);
@@ -98,6 +92,9 @@
 .theme-menu__button:disabled:before {
   content: '▶';
   position: absolute;
+  left: 50%;
+  right: 50%;
+  margin-inline-start: -60px;
   animation: move 1s infinite ease-in-out;
 }
 
@@ -177,7 +174,8 @@
 
 .item__title {
   padding: 4px 10px;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.005em;
+  border-block-end: 2px solid var(--accent-color);
 }
 
 .item__image-wrapper::after {
@@ -192,6 +190,7 @@
 }
 
 .item__image-wrapper {
+  max-block-size: 698px;
   text-shadow:
     -1px 0 var(--text-stroke-color),
     0 1px var(--text-stroke-color),
@@ -207,21 +206,57 @@
 }
 
 .item__image {
-  border-block-start: 2px solid var(--accent-color);
-  border-block-end: 2px solid var(--accent-color);
   inline-size: 100%;
+}
+
+/* Фильтры для изображений */
+
+.with-cat {
+  filter: contrast(1.3);
+}
+
+.near-window {
+  filter: blur(0.1rem);
+}
+
+.in-train {
+  filter: sepia(1);
+}
+
+.friends {
+  filter: grayscale(1);
+}
+
+.in-tramcar {
+  filter: invert(0.8);
+}
+
+.on-the-stairs {
+  filter: saturate(60%);
+}
+
+.night-street {
+  filter: hue-rotate(15deg) saturate(150%) invert(0.2);
 }
 
 .item__text-block {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding: 19px 28px 0 26px;
+  padding: 19px 28px 5px 26px;
   font-size: var(--text-font-size);
+  border-block-start: 2px solid var(--accent-color);
 }
 
 .item__text {
   line-height: 1.2em;
+}
+
+.poem {
+  font-size: 15px;
+  margin: 0 auto;
+  text-align: center;
+  font-style: italic;
 }
 
 .card__like-wrapper {
@@ -375,6 +410,10 @@
   transform: translateX(0);
 }
 
+.button-decorate:focus {
+  box-shadow: none;
+}
+
 .button-decorate:focus-visible {
   box-shadow: 2px 2px 0 2px var(--accent-color);
 }
@@ -459,6 +498,10 @@
     min-block-size: 323px;
   }
 
+  .item__image-wrapper {
+    max-block-size: 371px;
+  }
+
   .item__image-wrapper::after {
     top: 77px;
     right: 11px;
@@ -470,6 +513,10 @@
 
   .item__text {
     line-height: 1.17em;
+  }
+
+  .poem {
+    font-size: 14px;
   }
 
   .card__like-wrapper {
