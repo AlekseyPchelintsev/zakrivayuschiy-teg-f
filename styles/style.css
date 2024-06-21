@@ -172,9 +172,9 @@
 }
 
 .item__title {
+  border-block-end: 2px solid var(--accent-color);
   padding: 4px 10px;
   letter-spacing: -0.005em;
-  border-block-end: 2px solid var(--accent-color);
 }
 
 .item__image-wrapper::after {
@@ -189,14 +189,14 @@
 }
 
 .item__image-wrapper {
-  max-block-size: 692px;
+  border-inline-start: 2px solid var(--accent-color);
+  border-inline-end: 2px solid var(--accent-color);
   text-shadow:
     -1px 0 var(--text-stroke-color),
     0 1px var(--text-stroke-color),
     1px 0 var(--text-stroke-color),
     0 -1px var(--text-stroke-color);
-  border-inline-start: 2px solid var(--accent-color);
-  border-inline-end: 2px solid var(--accent-color);
+  max-block-size: 692px;
 }
 
 @supports (-webkit-text-stroke: 0.5px var(--text-stroke-color)) {
@@ -248,9 +248,9 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+  border-block-start: 2px solid var(--accent-color);
   padding: 19px 28px 5px 26px;
   font-size: var(--text-font-size);
-  border-block-start: 2px solid var(--accent-color);
 }
 
 .item__text {
@@ -258,10 +258,10 @@
 }
 
 .poem {
-  font-size: 15px;
   margin: 0 auto;
-  text-align: center;
+  font-size: 15px;
   font-style: italic;
+  text-align: center;
 }
 
 .card__like-wrapper {
@@ -288,8 +288,8 @@
 /* анимация SVG сердечка */
 
 .like-icon {
-  cursor: pointer;
   transform: scale(1);
+  cursor: pointer;
 }
 
 .like-icon.is-liked .heart {
