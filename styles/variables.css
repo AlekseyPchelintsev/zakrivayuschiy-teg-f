@@ -17,7 +17,7 @@
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
   --accent-color: #000;
   --main-font: 'Inter-Variable', sans-serif;
-  --accent-font: 'PressStart2P', sans-serif;
+  --accent-font: 'PressStart2P', 'fantasy';
   --font-weight-normal: 400;
   --font-weight-bold: 700;
   --border-color: #000;

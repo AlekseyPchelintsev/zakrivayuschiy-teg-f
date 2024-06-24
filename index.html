@@ -20,8 +20,8 @@
   <body class="page">
     <header class="header">
       <div class="header__title-box">
-        <h1 class="header__title">&lt;/HTML&gt;</h1>
-        <h2 class="header__subtitle">ЗАКРЫВАЮЩИй ТЕГ</h2>
+        <a href="#" class="header__title">&lt;/HTML&gt;</a>
+        <h1 class="header__subtitle">ЗАКРЫВАЮЩИй ТЕГ</h1>
       </div>
       <nav class="theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -51,13 +51,13 @@
     </header>
     <main class="main">
       <ul class="main__content-list">
-        <li class="content-list__item">
-          <h3 class="item__title">
+        <article class="content-list__item">
+          <h2 class="item__title">
             Фритрек и нулевой спринт: Подготовка к работе
-          </h3>
+          </h2>
           <div class="item__image-wrapper">
             <img
-              class="item__image in-car"
+              class="item__image filter-brightness"
               src="./images/hello.jpg"
               alt="мультяшный гусь, за рулём мультяшной волги, на фоне ночного города созданого нейросетью"
             />
@@ -68,18 +68,19 @@
               основами и настроиться на учёбу. И, возможно, подумать, как новые
               знания могут повлиять на ваше будущее.
             </p>
-            <label class="item__text-memories">
+            <p class="item__text">
               Начало обучения у меня прошло года 2 назад ещё. Повторно пройдя
               бесплатную часть курса в 2024 году, приятно для себя обнаружил что
               она обновляется и совершенствуется. Ничто не стоит на месте :)
-            </label>
+            </p>
             <div class="card__like-wrapper">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
                   width="39"
                   height="36"
                   fill="none"
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <g class="heart">
@@ -107,17 +108,17 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button button-decorate">
+              <button class="card__like-button button-decorate" type="button">
                 <span class="button__text button__text-card">Like</span>
               </button>
             </div>
           </div>
-        </li>
-        <li class="content-list__item">
-          <h3 class="item__title">1 спринт: Я — чистый лист</h3>
+        </article>
+        <article class="content-list__item">
+          <h2 class="item__title">1 спринт: Я — чистый лист</h2>
           <div class="item__image-wrapper">
             <img
-              class="item__image with-cat"
+              class="item__image filter-contrast"
               src="./images/cat.jpg"
               alt="млуьтяшный гусь дружелюбно тянется к кошечке, которая греется на батарее в подъезде"
             />
@@ -130,18 +131,19 @@
               за этим ощущением скрываются более глубокие вопросы: с чего
               начать? а вдруг будет слишком сложно? что, если я не справлюсь?
             </p>
-            <label class="item__text-memories">
+            <p class="item__text">
               Вспоминать особо нечего к сожалению. Конечно было волнение что
               сейчас на меня выльется кастрюля новой информации и я в моменте
               улечу в другую когорту, но в целом всё обошлось.
-            </label>
+            </p>
             <div class="card__like-wrapper">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
                   width="39"
                   height="36"
                   fill="none"
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <g class="heart">
@@ -169,17 +171,17 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button button-decorate">
+              <button class="card__like-button button-decorate" type="button">
                 <span class="button__text button__text-card">Like</span>
               </button>
             </div>
           </div>
-        </li>
-        <li class="content-list__item">
-          <h3 class="item__title">1 спринт: А если не получится?</h3>
+        </article>
+        <article class="content-list__item">
+          <h2 class="item__title">1 спринт: А если не получится?</h2>
           <div class="item__image-wrapper">
             <img
-              class="item__image near-window"
+              class="item__image filter-blur"
               src="./images/window.jpg"
               alt="мультяшный гусь сидит на стуле в подъезде и смотрит в окно"
             />
@@ -190,18 +192,19 @@
               могла быстро померкнуть и смениться ожиданием провала. Или вы,
               наоборот, могли вдохновиться успехами и поверить в себя.
             </p>
-            <label class="item__text-memories">
+            <p class="item__text">
               Спринт прошёл у меня менее чем за неделю т.к. базовые знания я
               приобрёл ранее, в попытках "самообучиться". Но в целом что-то
               новое и актуальное на сегодня я для себя узнал. Было увлекательно.
-            </label>
+            </p>
             <div class="card__like-wrapper">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
                   width="39"
                   height="36"
                   fill="none"
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <g class="heart">
@@ -229,17 +232,17 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button button-decorate">
+              <button class="card__like-button button-decorate" type="button">
                 <span class="button__text button__text-card">Like</span>
               </button>
             </div>
           </div>
-        </li>
-        <li class="content-list__item">
-          <h3 class="item__title">2 спринт: Погоня за идеалом</h3>
+        </article>
+        <article class="content-list__item">
+          <h2 class="item__title">2 спринт: Погоня за идеалом</h2>
           <div class="item__image-wrapper">
             <img
-              class="item__image in-train"
+              class="item__image filter-sepia"
               src="./images/myway.jpg"
               alt="мультяшный гусь стоит в тамбуре пригородной электрички и смотрит в открытую дверь"
             />
@@ -252,18 +255,19 @@
               подвержены перфекционизму и вместо того, чтобы сделать идеально,
               старались просто сделать.
             </p>
-            <label class="item__text-memories">
+            <p class="item__text">
               Всегда, к моему сожалению, идеализирую то, что делаю и каждый раз
               негодую, когда не получается так, как хочется. Работаю над собой в
               этом направлении... Пока что без особого успеха :(
-            </label>
+            </p>
             <div class="card__like-wrapper">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
                   width="39"
                   height="36"
                   fill="none"
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <g class="heart">
@@ -291,17 +295,17 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button button-decorate">
+              <button class="card__like-button button-decorate" type="button">
                 <span class="button__text button__text-card">Like</span>
               </button>
             </div>
           </div>
-        </li>
-        <li class="content-list__item">
-          <h3 class="item__title">2 спринт: О тех, кто рядом</h3>
+        </article>
+        <article class="content-list__item">
+          <h2 class="item__title">2 спринт: О тех, кто рядом</h2>
           <div class="item__image-wrapper">
             <img
-              class="item__image friends"
+              class="item__image filter-grayscale"
               src="./images/friends.jpg"
               alt="мультяшный гусь смотрит с балкона старого дома. На балконе напись дружба"
             />
@@ -315,7 +319,7 @@
               поддавался. Осваивать что-то новое легче, когда рядом есть
               единомышленники, не правда ли?
             </p>
-            <label class="item__text-memories">
+            <p class="item__text">
               Это и была одна из целей моего прихода в практикум - комьюнити.
               Самообучение разбивалось о стену всякий раз, когда я понимал, что
               обсудить насущные вопросы не с кем. Очень понравились ребята
@@ -326,14 +330,15 @@
               сложностей в течение первой недели спринта. Тут опять же помимо
               поддержки от ребят и девчонок, сыграло роль моё какое-никакое
               самообучении до поступления на курс.
-            </label>
+            </p>
             <div class="card__like-wrapper">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
                   width="39"
                   height="36"
                   fill="none"
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <g class="heart">
@@ -361,17 +366,17 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button button-decorate">
+              <button class="card__like-button button-decorate" type="button">
                 <span class="button__text button__text-card">Like</span>
               </button>
             </div>
           </div>
-        </li>
-        <li class="content-list__item">
-          <h3 class="item__title">3 спринт: Обходные стратегии</h3>
+        </article>
+        <article class="content-list__item">
+          <h2 class="item__title">3 спринт: Обходные стратегии</h2>
           <div class="item__image-wrapper">
             <img
-              class="item__image in-tramcar"
+              class="item__image filter-invert"
               src="./images/next_step.jpg"
               alt="мультяшный гусь едет в трамвае и смотрит в окно. На улице осень"
             />
@@ -382,17 +387,18 @@
               вам могло показаться, что решения просто иссякли. Значит, пришло
               время посмотреть на задачу под другим углом.
             </p>
-            <label class="item__text-memories">
+            <p class="item__text">
               Третий спринт начался как и предыдущие два - с наскока :) Но на
               него (если не изменяет память), у меня ушло порядка двух недель.
-            </label>
+            </p>
             <div class="card__like-wrapper">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
                   width="39"
                   height="36"
                   fill="none"
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <g class="heart">
@@ -420,17 +426,17 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button button-decorate">
+              <button class="card__like-button button-decorate" type="button">
                 <span class="button__text button__text-card">Like</span>
               </button>
             </div>
           </div>
-        </li>
-        <li class="content-list__item">
-          <h3 class="item__title">3 спринт: Когда опускаются руки</h3>
+        </article>
+        <article class="content-list__item">
+          <h2 class="item__title">3 спринт: Когда опускаются руки</h2>
           <div class="item__image-wrapper">
             <img
-              class="item__image on-the-stairs"
+              class="item__image filter-saturate"
               src="./images/sad.jpg"
               alt="мультяшный гусь с чемоданом в руках и поникшей головой, спускается по ступенькам в подъезде"
             />
@@ -443,21 +449,22 @@
               пожить. В такие моменты очень нужна концентрация. Вспомните,
               откуда вы её черпали.
             </p>
-            <label class="item__text-memories">
+            <p class="item__text">
               Концентрацию на самом деле я к концу 3 спринта растерял
               окончательно, т.к. на работе начался аврал, да ещё и в отпуск
               уехал на две недели, практически без возможности изучать программу
               в этот период. Из-за чего в целом сильно сбавил темп учебы и не
               исключаю возможность перехода в другую когорту, если не успею
               сдать в срок вот эту самую проектную работу.
-            </label>
+            </p>
             <div class="card__like-wrapper">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
                   width="39"
                   height="36"
                   fill="none"
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <g class="heart">
@@ -485,17 +492,17 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button button-decorate">
+              <button class="card__like-button button-decorate" type="button">
                 <span class="button__text button__text-card">Like</span>
               </button>
             </div>
           </div>
-        </li>
-        <li class="content-list__item">
-          <h3 class="item__title">«Сейчас я здесь»</h3>
+        </article>
+        <article class="content-list__item">
+          <h2 class="item__title">«Сейчас я здесь»</h2>
           <div class="item__image-wrapper">
             <img
-              class="item__image night-street"
+              class="item__image filter-mixed"
               src="./images/travel.jpg"
               alt="мультяшный угсь едет в волге по заснеженой улице. На дворе ночь"
             />
@@ -509,30 +516,19 @@
               получится, но это тот случай, когда важен сам процесс познания.
               Ведь часто путь — и есть результат.
             </p>
-            <label class="item__text-memories">
+            <p class="item__text">
               Замешательство и неуверенность в том, что смогу закончить курс и
-              устроиться на работу. Но надежда теплится где-то внутри. Люблю
-              творческие подходы и жмякать кнопки. Спасибо за внимание! А теперь
-              самописный стишок (в угоду самодельным иллюстрациям):
-            </label>
-            <p class="item__text poem">
-              Когда-нибудь я стану соколом<br />
-              Или пылинкой, чтоб глаз не радовать<br />
-              Частичкой неба бескрайнего, ясного<br />
-              Чтоб глядя в меня желания загадывать!<br />
-              <br />
-              Не затону в глубинах моря синего<br />
-              Не разобьюсь упав с вершины скал<br />
-              Подхватит меня ветром осенним, неистовым<br />
-              И отправлюсь туда, где никогда не бывал!
+              найти себя в данной сфере. Но надежда теплится где-то внутри.
+              Люблю творческие подходы и жмякать кнопки. Спасибо за внимание!
             </p>
             <div class="card__like-wrapper">
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button">
                 <svg
                   class="like-icon"
                   width="39"
                   height="36"
                   fill="none"
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <g class="heart">
@@ -560,42 +556,42 @@
                   />
                 </svg>
               </button>
-              <button class="card__like-button button-decorate">
+              <button class="card__like-button button-decorate" type="button">
                 <span class="button__text button__text-card">Like</span>
               </button>
             </div>
           </div>
-        </li>
+        </article>
       </ul>
-    </main>
-    <footer class="footer">
-      <button
-        class="footer__save-button button-decorate"
-        type="button"
-        onclick="window['insert-disk'].showModal()"
-        aria-controls="insert-disk"
-      >
-        <svg class="floppy floppy-decorate" viewBox="0 0 24 24">
-          <use href="./svg/floppy.svg#floppy_disk" />
-        </svg>
-        <span class="button__text">Сохранить на память</span>
-      </button>
-      <dialog class="insert-disk" id="insert-disk">
-        <div class="dialog-content_wrapper">
-          <svg class="floppy-decorate dialog-floppy" viewBox="0 0 21 21">
+      <section class="save-block">
+        <button
+          class="save-block_button button-decorate"
+          type="button"
+          onclick="window['insert-disk'].showModal()"
+          aria-controls="insert-disk"
+        >
+          <svg class="floppy floppy-decorate" viewBox="0 0 24 24">
             <use href="./svg/floppy.svg#floppy_disk" />
           </svg>
-          <p class="dialog-text">Вставьте дискету, чтобы продолжить</p>
-        </div>
-        <button
-          class="dialog-button button-decorate"
-          type="button"
-          onclick="window['insert-disk'].close()"
-        >
-          <span class="button__text">OK</span>
+          <span class="button__text">Сохранить на&nbsp;память</span>
         </button>
-      </dialog>
-    </footer>
+        <dialog class="insert-disk" id="insert-disk">
+          <div class="dialog-content_wrapper">
+            <svg class="floppy-decorate dialog-floppy" viewBox="0 0 21 21">
+              <use href="./svg/floppy.svg#floppy_disk" />
+            </svg>
+            <p class="dialog-text">Вставьте дискету, чтобы продолжить</p>
+          </div>
+          <button
+            class="dialog-button button-decorate"
+            type="button"
+            onclick="window['insert-disk'].close()"
+          >
+            <span class="button__text">OK</span>
+          </button>
+        </dialog>
+      </section>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
