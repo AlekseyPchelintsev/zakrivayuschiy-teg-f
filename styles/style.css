@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 102px 2px 103px;
+  padding: 102px 2px 104px;
   color: var(--accent-color);
   font-family: var(--main-font);
   background-color: var(--bg-color);
@@ -71,21 +71,18 @@
 }
 
 .theme-menu {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-block-end: 22px;
+  margin-block-end: 21px;
 }
 
 .theme-menu__list {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-inline-start: 18px;
-}
-
-.theme-menu__list-item {
-  position: relative;
+  padding-inline-start: 18px;
 }
 
 .theme-menu__button {
@@ -100,8 +97,7 @@
   content: '▶';
   position: absolute;
   right: 50%;
-  left: 50%;
-  margin-inline-start: -55px;
+  left: calc(50% - 55px);
   animation: move 1s infinite ease-in-out alternate;
 }
 
@@ -167,7 +163,7 @@
 
 .item__title {
   border-block-end: 2px solid var(--accent-color);
-  padding: 6px 10px 5px;
+  padding: 5px 10px 4px;
   font-size: var(--text-font-size);
   letter-spacing: -0.002em;
   font-variation-settings: 'wght' var(--font-weight-bold, 700);
@@ -397,7 +393,7 @@
 .save-block {
   display: flex;
   justify-content: center;
-  padding-block-start: 50px;
+  padding-block-start: 51px;
 }
 
 .save-block_button {
@@ -428,8 +424,11 @@
 /* попап */
 
 .insert-disk {
-  padding: 27px;
-  outline: 2px solid var(--border-color);
+  padding: 30px;
+  outline: 1px solid var(--border-color);
+  color: var(--accent-color);
+  font-family: var(--accent-font);
+  font-size: var(--text-font-size-small);
   background-color: var(--bg-color);
 }
 
@@ -440,6 +439,7 @@
 .insert-disk[open] {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 30px;
 }
 
@@ -450,8 +450,6 @@
 }
 
 .dialog-text {
-  color: var(--accent-color);
-  font-family: var(--accent-font);
   line-height: 150%;
   text-transform: uppercase;
   max-inline-size: 234px;
@@ -463,8 +461,10 @@
 
 .dialog-button {
   position: relative;
-  padding: 10.5px 0 6px;
+  padding: 10px 0;
   overflow: hidden;
+  max-inline-size: 293px;
+  inline-size: 100%;
 }
 
 @media (width <= 375px) {
@@ -473,7 +473,11 @@
   }
 
   .theme-menu__list {
-    margin-inline-start: 20px;
+    padding-inline-start: 20px;
+  }
+
+  .item__title {
+    padding-block-end: 3px;
   }
 
   .item__image-wrapper {
@@ -498,12 +502,12 @@
   }
 
   .save-block {
-    padding-block-start: 50px;
+    padding-block-start: 55px;
   }
 
   .save-block_button {
     flex-direction: column;
-    gap: 0;
+    gap: 4px;
     padding: 12px 0 15px;
     max-inline-size: 306px;
   }
@@ -516,6 +520,20 @@
   }
 
   .insert-disk {
-    min-inline-size: 346px;
+    max-inline-size: 341px;
+    inline-size: 100%;
+  }
+
+  .dialog-content_wrapper {
+    max-inline-size: 257px;
+  }
+
+  .dialog-button {
+    max-inline-size: 257px;
+    inline-size: 100%;
+  }
+
+  .dialog-floppy {
+    inline-size: 90px;
   }
 }
